@@ -1,0 +1,11 @@
+version: '2'
+services:
+    iotapp-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/IoTApp/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=IoTApp
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
